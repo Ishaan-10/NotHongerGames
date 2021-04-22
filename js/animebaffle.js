@@ -6,24 +6,24 @@ function write(){
     i++;
 }
 text.set({
-    characters: '>░█ ░▓░█░ ░░▒░▓ █░░ <██▓> ░░░▓ ▓░> <▒░█ █░░▓',
-    speed: 500
+    characters: '>░█ ░▓░█░ ░░▒░▓ █░░ <██▓>',
+    speed: 100
 })
-text.start(4000);
-text.reveal(7000);
+text.start(1000);
+text.reveal(1250);
 
 const text2=baffle("#dates");
 text2.set({
     characters: '123456789012345678901234567890',
     speed: 500
 })
-text2.start(4000);
-text2.reveal(7000);
+text2.start(2000);
+text2.reveal(3000);
 
 write();
 setTimeout(write, 4000);
 
-setTimeout(write, 5000);
+setTimeout(write, 4500);
 
-setTimeout(write, 6000);
-setTimeout(write, 7000);
+setTimeout(write, 5000);
+setTimeout(write, 5500);
